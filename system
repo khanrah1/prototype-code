@@ -90,6 +90,7 @@ if(cm < 6){
        digitalWrite(led, LOW);
         digitalWrite(led1, HIGH);
         digitalWrite(led2, LOW);
+        Spark.publish("waterlevel", "at mid point", 60, PRIVATE );
      
         
  }
@@ -99,6 +100,8 @@ if(cm < 6){
     digitalWrite(led, LOW);
         digitalWrite(led1, LOW);
         digitalWrite(led2, HIGH);
+        
+        Spark.publish("waterlevel", "at end", 60, PRIVATE );
         
      
 }
